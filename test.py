@@ -11,7 +11,7 @@ def trade_spider(max_pages):
         soup = BeautifulSoup(plain_text)
         for link in soup.findAll("a"):
           #  href = link.get("href")
-            print(link)
+            print(link.string)
         page += 10
 
 trade_spider(1)
